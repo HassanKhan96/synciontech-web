@@ -165,9 +165,25 @@ export async function handleContact(
   try {
     await deps.send(contact, env.SPACEMAIL_PASSWORD);
     return json(200);
-  } catch {
+  } catch (error) {
     // Never return or log SMTP errors: they can contain credentials or personal data.
     // A connection may fail after SMTP acceptance; do not automatically retry.
+    // TEMPORARY DIAGNOSTIC: logs only a whitelisted error shape, never the full
+    // error, the SMTP transcript, credentials, or visitor data. Remove once fixed.
+    const detail = error as {
+      name?: string; code?: string; command?: string;
+      responseCode?: number; message?: string;
+    };
+    console.error(
+      "contact.send failed",
+      JSON.stringify({
+        name: detail?.name,
+        code: detail?.code,
+        command: detail?.command,
+        responseCode: detail?.responseCode,
+        message: detail?.message,
+      }),
+    );
     return json(
       502,
       "We couldn’t confirm your message was sent. Please email info@synciontech.com if needed.",
