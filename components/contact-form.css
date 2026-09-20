@@ -1,0 +1,10 @@
+.contact-fields { display: grid; gap: 24px; min-width: 0; border: 0; padding: 0; margin: 0; }
+.contact-honeypot { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.contact-security { min-height: 140px; max-width: 100%; }
+.contact-note { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.65; overflow-wrap: anywhere; }
+.contact-note a { color: var(--deep-purple); text-decoration: underline; text-underline-offset: 3px; }
+.contact-feedback { margin: 0; padding: 14px 16px; border: 1px solid #e3c8cf; border-radius: 6px; background: #fff8fa; color: #7b263f; font-size: 13px; line-height: 1.6; }
+.contact-feedback p { margin: 0 0 10px; }
+.contact-form button:disabled { opacity: .55; cursor: not-allowed; transform: none; }
+.form-success:focus-visible { outline: 2px solid var(--violet); outline-offset: 4px; }
+@media (max-width: 640px) { .contact-fields { gap: 20px; } .form-success { padding: 30px 22px; } }

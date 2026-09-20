@@ -1,0 +1,34 @@
+.stage { position: relative; width: 100%; aspect-ratio: 1; margin: 8px 0; isolation: isolate; --orbit-duration: 70s; }
+.track,.innerTrack { position: absolute; inset: 17%; border: 1px solid #ddd0ef; border-radius: 50%; pointer-events: none; }
+.innerTrack { inset: 31%; border-style: dashed; border-color: #e8dff1; }
+.core { position: absolute; z-index: 1; inset: 40.5%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; border-radius: 22%; background: #291344; box-shadow: 0 12px 30px -16px #71469d; color: #fff; }
+.core img { width: 58%; height: auto; }
+.core span { font-size: clamp(11px, 1.15vw, 15px); font-weight: 650; }
+.orbit { position: absolute; inset: 0; list-style: none; margin: 0; padding: 0; animation: orbit var(--orbit-duration) linear infinite; }
+.position { position: absolute; width: 32%; left: 50%; top: 17%; transform: translate(-50%, -50%); }
+.position[data-position="1"] { left: 83%; top: 50%; }
+.position[data-position="2"] { left: 50%; top: 83%; }
+.position[data-position="3"] { left: 17%; top: 50%; }
+.card { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 94px; padding: 12px 6px; gap: 6px; border: 1px solid #ded1ee; border-radius: 12px; background: linear-gradient(135deg, #ffffff, #f8f4fc); box-shadow: 0 8px 22px -18px #6b438e, inset 0 1px 0 #fff; text-align: center; animation: counter-orbit var(--orbit-duration) linear infinite; }
+.card svg { color: #8955c7; }
+.card strong { font-size: 12px; line-height: 1.35; color: #3b2a4b; font-weight: 600; }
+.card small { font-size: 9px; line-height: 1.4; color: #82718e; }
+.stage[data-paused="true"] .orbit,.stage[data-paused="true"] .card { animation-play-state: paused; }
+.footer { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 0 12px; color: #81708f; font-size: 10px; }
+.control { display: inline-flex; align-items: center; gap: 5px; min-height: 32px; padding: 6px 9px; border: 1px solid #ddd1e9; border-radius: 6px; background: rgba(255,255,255,.75); color: #665174; font-size: 10px; cursor: pointer; }
+.control:hover { background: #fff; }
+@keyframes orbit { to { transform: rotate(360deg); } }
+@keyframes counter-orbit { to { transform: rotate(-360deg); } }
+@media (max-width: 520px) {
+  .stage { margin: 12px 0 4px; }
+  .card { min-height: 58px; padding: 8px 4px; gap: 5px; border-radius: 9px; }
+  .card strong { font-size: 10px; }
+  .card small { display: none; }
+  .card svg { width: 17px; height: 17px; }
+  .core { gap: 4px; }
+  .footer { font-size: 9px; padding-inline: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .orbit,.card { animation: none; }
+  .control { display: none; }
+}

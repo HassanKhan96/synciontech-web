@@ -1,0 +1,86 @@
+[     488ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:3001/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[     528ms] [LOG] [HMR] connected @ http://127.0.0.1:3001/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[     615ms] [ERROR] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <LoadingBoundary name="/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={{...}} forbidden={undefined} unauthorized={undefined}>
+        <HTTPAccessFallbackErrorBoundary pathname="/" notFound={{...}} forbidden={undefined} unauthorized={undefined} ...>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+                <SegmentViewNode type="page" pagePath="page.tsx">
+                  <SegmentTrieNode>
+                  <Home>
+                    <main id="top">
+                      <SectionMotion>
+                      <Header>
+                      <section>
+                      <section>
+                      <section>
+                      <section>
+                      <section>
+                      <section>
+                      <section id="contact" className="contact se...">
+                        <div className="section-sh...">
+                          <div>
+                          <ContactForm>
+                            <form className="contact-form" onSubmit={function submit}>
+                              <div className="field-row">
+                                <label>
+                                  <span>
+                                  <input
+                                    name="name"
+                                    type="text"
+                                    autoComplete="name"
+                                    required={true}
+                                    placeholder="Your name"
+-                                   style={{caret-color:"transparent"}}
+                                  >
+                                <label>
+                                  <span>
+                                  <input
+                                    name="email"
+                                    type="email"
+                                    autoComplete="email"
+                                    required={true}
+                                    placeholder="you@company.com"
+-                                   style={{caret-color:"transparent"}}
+                                  >
+                              <label>
+                                <span>
+                                <input
+                                  name="company"
+                                  type="text"
+                                  autoComplete="organization"
+                                  placeholder="Company name"
+-                                 style={{caret-color:"transparent"}}
+                                >
+                              <label>
+                                <span>
+                                <textarea
+                                  name="message"
+                                  required={true}
+                                  rows={4}
+                                  placeholder="Tell us what you’re working on"
+-                                 style={{caret-color:"transparent"}}
+                                >
+                              ...
+                      ...
+                ...
+              ...
+ @ http://127.0.0.1:3001/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:1052
+[   23209ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:3001/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[   23221ms] [LOG] [HMR] connected @ http://127.0.0.1:3001/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[   39781ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:3001/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[   39790ms] [LOG] [HMR] connected @ http://127.0.0.1:3001/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776

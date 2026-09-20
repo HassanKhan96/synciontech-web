@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "syncion-tech",
+  "pages_build_output_dir": "./out",
+  "compatibility_date": "2026-09-20",
+  "compatibility_flags": ["nodejs_compat"]
+  // Add secrets in the Cloudflare dashboard, never in this file.
+}

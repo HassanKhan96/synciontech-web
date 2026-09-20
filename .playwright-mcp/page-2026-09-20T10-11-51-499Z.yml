@@ -1,0 +1,238 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e4]:
+      - link "Syncion Tech home" [ref=e5] [cursor=pointer]:
+        - /url: "#top"
+        - generic [ref=e6]: Syncion
+      - navigation "Main navigation" [ref=e7]:
+        - button "Products" [ref=e8] [cursor=pointer]
+        - link "Solutions" [ref=e11] [cursor=pointer]:
+          - /url: "#solutions"
+        - link "About" [ref=e12] [cursor=pointer]:
+          - /url: "#about"
+        - link "Contact" [ref=e13] [cursor=pointer]:
+          - /url: "#contact"
+      - link "Let's talk" [ref=e14] [cursor=pointer]:
+        - /url: "#contact"
+    - region [ref=e18]:
+      - generic [ref=e19]:
+        - paragraph [ref=e20]: Built for how business really works
+        - heading [level=1] [ref=e22]:
+          - text: Technology That Keeps
+          - emphasis [ref=e23]: Business Moving.
+        - paragraph [ref=e24]: We build connected products and practical software that bring people, processes, and decisions into one clear flow.
+        - generic [ref=e25]:
+          - link "Explore our products" [ref=e26] [cursor=pointer]:
+            - /url: "#products"
+          - link "Talk to us" [ref=e29] [cursor=pointer]:
+            - /url: "#contact"
+        - generic [ref=e33]: Software shaped around real operations—not the other way around.
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - generic [ref=e37]: THE SYNCION ECOSYSTEM
+          - generic [ref=e38]: Connected by design
+        - img "One connected business Syncion connects customers, daily operations, teams, and business insights." [ref=e39]:
+          - generic [ref=e58]: Syncion
+          - generic [ref=e64]:
+            - generic [ref=e66]: Customers
+            - generic [ref=e67]: A simpler experience
+          - generic [ref=e68]:
+            - generic [ref=e70]: Operations
+            - generic [ref=e71]: Work in one flow
+          - generic [ref=e72]:
+            - generic [ref=e74]: Your team
+            - generic [ref=e75]: Everyone in sync
+          - generic [ref=e76]:
+            - generic [ref=e78]: Business insight
+            - generic [ref=e79]: Clarity to move forward
+        - generic [ref=e80]: People. Processes. Decisions.
+    - region "Syncion principles" [ref=e82]:
+      - generic [ref=e83]:
+        - paragraph [ref=e84]: Connected by design
+        - paragraph [ref=e86]: Clear in use
+        - paragraph [ref=e88]: Built for the everyday
+    - generic [ref=e90]:
+      - generic [ref=e91]:
+        - generic [ref=e92]:
+          - paragraph [ref=e93]: Our products
+          - heading "Useful technology. Thoughtfully connected." [level=2] [ref=e95]: Useful technology.Thoughtfully connected.
+        - paragraph [ref=e96]: Focused products for the parts of business where clarity, speed, and control matter most.
+      - article [ref=e97]:
+        - generic [ref=e98]:
+          - generic [ref=e99]: SigByte
+          - paragraph [ref=e101]: Restaurant management platform
+          - heading "One connected platform for your restaurant." [level=3] [ref=e102]: One connected platformfor your restaurant.
+          - paragraph [ref=e103]: Bring ordering, front of house, kitchen, and oversight together. SigByte helps the whole restaurant move as one—without losing sight of the details.
+          - list [ref=e104]:
+            - listitem [ref=e105]: Orders and POS in one flow
+            - listitem [ref=e108]: Clear kitchen communication
+            - listitem [ref=e111]: Live operational visibility
+          - link "Explore SigByte" [ref=e114] [cursor=pointer]:
+            - /url: "#contact"
+        - generic "SigByte restaurant ecosystem from customer to management" [ref=e118]:
+          - generic [ref=e119]:
+            - strong [ref=e125]: Customer
+            - generic [ref=e126]: Chooses & orders
+          - generic [ref=e127]:
+            - strong [ref=e133]: Ordering
+            - generic [ref=e134]: Every channel
+          - generic [ref=e135]:
+            - strong [ref=e140]: POS
+            - generic [ref=e141]: One live view
+          - generic [ref=e142]:
+            - strong [ref=e149]: Kitchen
+            - generic [ref=e150]: Clear workflow
+          - generic [ref=e151]:
+            - strong [ref=e157]: Management
+            - generic [ref=e158]: Decisions in context
+      - article [ref=e159]:
+        - generic [ref=e160]:
+          - generic [ref=e161]: EM Khata
+          - paragraph [ref=e163]: Everyday inventory control
+          - heading [level=3] [ref=e164]:
+            - text: Simple inventory.
+            - emphasis [ref=e165]: Better control.
+          - paragraph [ref=e166]: A straightforward way to manage stock, follow business activity, and make confident decisions—without making the work more complicated.
+          - link "Discover EM Khata" [ref=e167] [cursor=pointer]:
+            - /url: "#contact"
+        - generic [ref=e170]:
+          - generic [ref=e171]:
+            - generic [ref=e172]: "01"
+            - generic [ref=e173]:
+              - heading "Manage inventory" [level=4] [ref=e174]
+              - paragraph [ref=e175]: Know what is in stock, what is moving, and what needs attention.
+          - generic [ref=e176]:
+            - generic [ref=e177]: "02"
+            - generic [ref=e178]:
+              - heading "Track business activity" [level=4] [ref=e179]
+              - paragraph [ref=e180]: Keep everyday movements visible without adding everyday admin.
+          - generic [ref=e181]:
+            - generic [ref=e182]: "03"
+            - generic [ref=e183]:
+              - heading "Stay organised" [level=4] [ref=e184]
+              - paragraph [ref=e185]: Bring products and records into one dependable place.
+          - generic [ref=e186]:
+            - generic [ref=e187]: "04"
+            - generic [ref=e188]:
+              - heading "Make better decisions" [level=4] [ref=e189]
+              - paragraph [ref=e190]: Use a clearer view of the business to choose what happens next.
+    - generic [ref=e192]:
+      - generic [ref=e193]:
+        - paragraph [ref=e194]: The connected ecosystem
+        - heading [level=2] [ref=e196]:
+          - text: Everyone sees whatthey need.
+          - emphasis [ref=e197]: Everythingmoves together.
+        - paragraph [ref=e198]: Good systems do more than collect information. They help each person act with context, while keeping the whole business aligned.
+        - link "See how we think" [ref=e199] [cursor=pointer]:
+          - /url: "#solutions"
+      - generic [ref=e202]:
+        - generic [ref=e203]:
+          - generic [ref=e204]: "01"
+          - generic [ref=e205]:
+            - heading "Customer" [level=3] [ref=e206]
+            - paragraph [ref=e207]: A simple experience from the first tap.
+        - generic [ref=e209]:
+          - generic [ref=e210]: "02"
+          - generic [ref=e211]:
+            - heading "Staff" [level=3] [ref=e212]
+            - paragraph [ref=e213]: Less friction in the middle of a busy day.
+        - generic [ref=e215]:
+          - generic [ref=e216]: "03"
+          - generic [ref=e217]:
+            - heading "Kitchen" [level=3] [ref=e218]
+            - paragraph [ref=e219]: The right information at the right time.
+        - generic [ref=e221]:
+          - generic [ref=e222]: "04"
+          - generic [ref=e223]:
+            - heading "Managers" [level=3] [ref=e224]
+            - paragraph [ref=e225]: A live view of what needs attention.
+        - generic [ref=e227]:
+          - generic [ref=e228]: "05"
+          - generic [ref=e229]:
+            - heading "Owners" [level=3] [ref=e230]
+            - paragraph [ref=e231]: Clarity across the whole operation.
+    - generic [ref=e234]:
+      - generic [ref=e235]:
+        - paragraph [ref=e236]: Custom software
+        - heading "When off-the-shelf doesn't fit the work." [level=2] [ref=e238]: When off-the-shelfdoesn't fit the work.
+        - paragraph [ref=e239]: We design and build software around the outcome you need—starting with how your business actually runs.
+      - generic [ref=e240]:
+        - article [ref=e241]:
+          - paragraph [ref=e247]: "01"
+          - heading "Remove the handoffs" [level=3] [ref=e248]
+          - paragraph [ref=e249]: Connect tools and processes so work moves without repeated entry, chasing, or guesswork.
+        - article [ref=e250]:
+          - paragraph [ref=e262]: "02"
+          - heading "Make complexity usable" [level=3] [ref=e263]
+          - paragraph [ref=e264]: Turn complicated operations into focused software that teams can understand and adopt.
+        - article [ref=e265]:
+          - paragraph [ref=e269]: "03"
+          - heading "Build room to grow" [level=3] [ref=e270]
+          - paragraph [ref=e271]: Create dependable foundations that can evolve as your operation, customers, and ambitions do.
+      - link "Discuss a project" [ref=e272] [cursor=pointer]:
+        - /url: "#contact"
+    - generic [ref=e277]:
+      - paragraph [ref=e279]: Thoughtfully connected.
+      - generic [ref=e280]:
+        - paragraph [ref=e281]: About Syncion
+        - heading "We like technology that earns its place." [level=2] [ref=e283]: We like technologythat earns its place.
+        - paragraph [ref=e284]: Syncion Tech is a product and software company focused on making day-to-day business work better.
+        - generic [ref=e285]:
+          - paragraph [ref=e286]: That means listening closely, understanding the work behind the requirement, and building only what genuinely helps.
+          - paragraph [ref=e287]: "Our products are practical by nature and ambitious in purpose: fewer gaps, clearer decisions, and systems people can rely on."
+    - generic [ref=e289]:
+      - generic [ref=e290]:
+        - paragraph [ref=e291]: Start a conversation
+        - heading "Have something in mind? Let's talk." [level=2] [ref=e293]: Have somethingin mind? Let's talk.
+        - paragraph [ref=e294]: Whether you're interested in one of our products or need software built around your business, we'd like to hear about it.
+        - link "hello@syncion.tech" [ref=e295] [cursor=pointer]:
+          - /url: mailto:hello@syncion.tech
+      - generic [ref=e299]:
+        - generic [ref=e300]:
+          - generic [ref=e301]:
+            - generic [ref=e302]: Name
+            - textbox "Name" [ref=e303]:
+              - /placeholder: Your name
+          - generic [ref=e304]:
+            - generic [ref=e305]: Work email
+            - textbox "Work email" [ref=e306]:
+              - /placeholder: you@company.com
+        - generic [ref=e307]:
+          - generic [ref=e308]:
+            - text: Company
+            - emphasis [ref=e309]: Optional
+          - textbox "Company Optional" [ref=e310]:
+            - /placeholder: Company name
+        - generic [ref=e311]:
+          - generic [ref=e312]: How can we help?
+          - textbox "How can we help?" [ref=e313]:
+            - /placeholder: Tell us what you’re working on
+        - button "Send message" [ref=e314] [cursor=pointer]
+    - generic [ref=e317]:
+      - generic [ref=e318]:
+        - generic [ref=e319]:
+          - link "Syncion Tech home" [ref=e320] [cursor=pointer]:
+            - /url: "#top"
+            - generic [ref=e321]: Syncion
+          - paragraph [ref=e322]: Technology that keeps business moving.
+        - generic [ref=e323]:
+          - generic [ref=e324]:
+            - generic [ref=e325]: Explore
+            - link "Products" [ref=e326] [cursor=pointer]:
+              - /url: "#products"
+            - link "Solutions" [ref=e327] [cursor=pointer]:
+              - /url: "#solutions"
+            - link "About" [ref=e328] [cursor=pointer]:
+              - /url: "#about"
+          - generic [ref=e329]:
+            - generic [ref=e330]: Products
+            - link "SigByte" [ref=e331] [cursor=pointer]:
+              - /url: "#sigbyte"
+            - link "EM Khata" [ref=e332] [cursor=pointer]:
+              - /url: "#em-khata"
+            - link "Contact" [ref=e333] [cursor=pointer]:
+              - /url: "#contact"
+      - generic [ref=e334]:
+        - paragraph [ref=e335]: © 2026 Syncion Tech. All rights reserved.
+        - paragraph [ref=e336]: Made with clarity and care.
+  - button "Open Next.js Dev Tools" [ref=e342] [cursor=pointer]
