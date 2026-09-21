@@ -11,3 +11,7 @@ out/
 .dev.vars.*
 !.dev.vars.example
 *.tsbuildinfo
+
+# Shared-hosting secrets and upload bundle
+hosting/private/config.php
+dist-upload/

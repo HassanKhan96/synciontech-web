@@ -1,5 +1,10 @@
 # Cloudflare Pages deployment
 
+> **The site is moving to Spaceship shared hosting.** See
+> [hosting/README.md](hosting/README.md) for the static-upload plus PHP endpoint
+> setup that replaces this one. This document is kept for the Cloudflare Pages
+> path, which still works if you go back to it.
+
 The site exports static HTML, CSS, JavaScript, and images into `out/`.
 Domain registration and the `info@synciontech.com` mailbox remain at Spaceship.
 No DNS records or external hosting settings have been changed by this setup.

@@ -1,0 +1,49 @@
+# Syncion Tech — Apache configuration for Spaceship shared hosting.
+# Upload to the document root, alongside the exported site.
+
+Options -MultiViews -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Force HTTPS. The second condition stops a redirect loop if TLS is
+  # terminated by a proxy in front of Apache.
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+  # Keep the /api/contact path the front end already posts to.
+  RewriteRule ^api/contact/?$ api/contact.php [L]
+
+  # Serve the static export's .html files from extensionless URLs.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+  RewriteRule ^(.+?)/?$ /$1.html [L]
+</IfModule>
+
+ErrorDocument 404 /404.html
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+
+  # Next.js fingerprints these filenames, so they can be cached indefinitely.
+  <IfModule mod_setenvif.c>
+    SetEnvIf Request_URI "^/_next/static/" IMMUTABLE_ASSET=1
+  </IfModule>
+  Header set Cache-Control "public, max-age=31536000, immutable" env=IMMUTABLE_ASSET
+
+  # HTML must be revalidated so a new deploy is picked up immediately.
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+# Never serve secrets or version control data, even if uploaded by mistake.
+<FilesMatch "^\.">
+  Require all denied
+</FilesMatch>
+RedirectMatch 404 ^/syncion-private(/|$)
+RedirectMatch 404 ^/\.git(/|$)

@@ -10,7 +10,8 @@
     "test": "node --import tsx --test tests/*.test.ts",
     "pages:dev": "wrangler pages dev out",
     "pages:build": "wrangler pages functions build --outdir .wrangler/functions --compatibility-flags=nodejs_compat --compatibility-date=2026-09-20",
-    "pages:deploy": "npm run build && wrangler pages deploy out"
+    "pages:deploy": "npm run build && wrangler pages deploy out",
+    "hosting:bundle": "node scripts/build-hosting.mjs"
   },
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.1.1",
